@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130118100465) do
+ActiveRecord::Schema.define(:version => 20130118141833) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -66,6 +66,17 @@ ActiveRecord::Schema.define(:version => 20130118100465) do
   end
 
   add_index "spree_adjustments", ["adjustable_id"], :name => "index_adjustments_on_order_id"
+
+  create_table "spree_asset_translations", :force => true do |t|
+    t.integer  "spree_asset_id"
+    t.string   "locale"
+    t.string   "alt"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "spree_asset_translations", ["locale"], :name => "index_spree_asset_translations_on_locale"
+  add_index "spree_asset_translations", ["spree_asset_id"], :name => "index_spree_asset_translations_on_spree_asset_id"
 
   create_table "spree_assets", :force => true do |t|
     t.integer  "viewable_id"
