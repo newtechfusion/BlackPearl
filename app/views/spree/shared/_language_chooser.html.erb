@@ -1,8 +1,7 @@
 <div id="language_chooser">
   Choose Language:<br/>
-  <a class="choose_language choose_english"
-  href="/en">ENGLISH</a><br/> 
-  <a class="choose_language choose_japanese"
-  href="/ja">JAPANESE</a>
-  
+  <%= link_to "ENGLISH", :controller=>params[:controller],:action=>params[:action],:id=>params[:id],:locale=>"en",:currency=>"USD"%>
+  <%= link_to "JAPANESE", :controller=>params[:controller],:action=>params[:action],:id=>params[:id],:locale=>"ja",:currency=>"JPY"%>
+</div>
+
 </div>

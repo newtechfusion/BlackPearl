@@ -44,3 +44,4 @@ gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-s
 gem 'spree_multi_lingual', :git => "git@github.com:jipiboily/spree_multi_lingual.git", :branch => '1-3-stable'
 
 
+gem "spree_multi_currency", :git => "git://github.com/pronix/spree-multi-currency.git"
