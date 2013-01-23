@@ -45,3 +45,5 @@ gem 'spree_multi_lingual', :git => "git@github.com:jipiboily/spree_multi_lingual
 
 
 gem "spree_multi_currency", :git => "git://github.com/pronix/spree-multi-currency.git"
+
+gem "devise-encryptable"
